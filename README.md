@@ -1,5 +1,14 @@
 #  GasHub  
-![GasHub Logo](https://your-logo-url.png)  
+![GasHub Logo]
+
+## 👥 Team Members  
+
+Meet the amazing team behind GasHub!  
+
+| Name | Role | GitHub Profile |  
+|------|------|---------------|  
+| **Shani Tuachi** | Frontend Developer | [GitHub](https://github.com/shaninala) |  
+| **Michael Zheng** | Backend Developer | [GitHub](https://github.com/michaelzheng02) |  
 
 ## Project Description: 
 
@@ -16,20 +25,15 @@ GasHub is a web application that we are currently developing to help drivers **s
 
 ## 🛠 Tech Stack  
 
-### 📌 **Languages**  
+### 🎨 **Frontend**  
 | 🛠 Tool  | 📖 Purpose  |  
 |---------|------------|  
-| **HTML**  | Structuring the web pages. |  
-| **CSS**  | Styling and layout of the pages. |  
-| **TypeScript** | Type safety & improved JavaScript development. |  
+| **TypeScript** | Ensuring type safety & improved code quality in JavaScript-based development. |  
+| **Tailwind CSS** | Utility-first CSS framework for styling. |  
+| **React.js** | Building the user interface with a component-based structure. |  
+| **Next.js** | React framework for server-side rendering, static site generation, and routing. |  
 
-### ⚙️ **Frameworks**  
-| 🏗 Tool | 🔹 Purpose |  
-|--------|----------|  
-| **React** | Building the user interface with components. |  
-| **Next.js** | Server-side rendering, static site generation, and routing. |  
-
-### 🔧 **Backend & Database**  
+### 🖥 **Backend & Database**  
 | 💾 Tool  | ⚙️ Purpose |  
 |---------|-----------|  
 | **Node.js** | Running JavaScript on the server. |  
@@ -40,9 +44,9 @@ GasHub is a web application that we are currently developing to help drivers **s
 ### 🛠 **Additional Tools**  
 | 🏆 Tool | 📝 Purpose |  
 |--------|---------|  
-| **JSON** | Handling data interchange and API responses. |  
 | **Figma** | UI/UX design, wireframes, and mockups. |  
-| **Google Sheets** | Organizing and managing data. |  
+| **Google Sheets** | For project management & organizing data. |  
+| **JSON** | Handling data interchange and API responses. |  
 | **Vercel** | Deploying the web application. |  
 | **GitHub** | Version control and collaboration. |  
 
@@ -52,7 +56,7 @@ GasHub is a web application that we are currently developing to help drivers **s
 
 ```sh
 # Clone the repository
-git clone https://github.com/yourusername/GasHub.git
+git clone https://github.com/michaelzheng02/Final-Project
 cd GasHub
 
 # Install dependencies
