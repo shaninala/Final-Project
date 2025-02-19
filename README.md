@@ -1,15 +1,15 @@
-# 🚗 GasHub  
+#  GasHub  
 ![GasHub Logo](https://your-logo-url.png)  
 
-## OUR PROJECT IS...  
+## Project Description: 
 
-GasHub is a web application that we are currently developing to help drivers **save money and reduce fuel waste** by finding the most efficient and affordable gas stations on their route. Our goal is to provide **real-time gas price updates** and **smart route optimization**, making it easier for drivers to make informed decisions.  
+GasHub is a web application that we are currently developing to help drivers **save money and reduce fuel waste** by finding the most efficient and affordable gas stations on their route. Our goal is to provide **real-time gas price updates**, making it easier for drivers to make informed decisions.  
 
 ---
 
 ## 🚀 Features (In Development)  
 
-✅ Real-time gas price updates  
+✅ Finding Gas Stations 
 
 
 ---
