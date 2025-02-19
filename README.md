@@ -5,14 +5,14 @@ Our mission is to provide real-time gas prices so consumers never have to overpa
 Tools:
 
 Frontend:
-Next.js
-React.js
-Tailwind CSS
+Next.js,
+React.js,
+Tailwind CSS,
 TypeScript
 
 Backend:
-Firebase
-Node.js
-MongoDB
+Firebase,
+Node.js,
+MongoDB,
 Google Places API
 
