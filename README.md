@@ -57,7 +57,7 @@ GasHub is a web application that we are currently developing to help drivers **s
 ```sh
 # Clone the repository
 git clone https://github.com/michaelzheng02/Final-Project
-cd GasHub
+cd frontend
 
 # Install dependencies
 npm install
