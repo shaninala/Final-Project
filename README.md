@@ -1,5 +1,7 @@
 #  GasHub  
-![GasHub Logo]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de08558e-0a72-4191-b2bd-1860e5c5fb8a">
+</p>
 
 ## 👥 Team Members  
 
