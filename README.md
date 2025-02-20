@@ -3,7 +3,7 @@
   <img src="https://github.com/user-attachments/assets/de08558e-0a72-4191-b2bd-1860e5c5fb8a">
 </p>
 
-## 👥 Team Members  
+##  Team Members  
 
 Meet the amazing team behind GasHub!  
 
@@ -18,33 +18,33 @@ GasHub is a web application that we are currently developing to help drivers **s
 
 ---
 
-## 🚀 Features (In Development)  
+##  Features (In Development)  
 
-✅ Finding Gas Stations 
+ Finding Gas Stations 
 
 
 ---
 
-## 🛠 Tech Stack  
+##  Tech Stack  
 
-### 🎨 **Frontend**  
-| 🛠 Tool  | 📖 Purpose  |  
+###  **Frontend**  
+|  Tool  |  Purpose  |  
 |---------|------------|  
 | **TypeScript** | Ensuring type safety & improved code quality in JavaScript-based development. |  
 | **Tailwind CSS** | Utility-first CSS framework for styling. |  
 | **React.js** | Building the user interface with a component-based structure. |  
 | **Next.js** | React framework for server-side rendering, static site generation, and routing. |  
 
-### 🖥 **Backend & Database**  
-| 💾 Tool  | ⚙️ Purpose |  
+###  **Backend & Database**  
+|  Tool  |  Purpose |  
 |---------|-----------|  
 | **Node.js** | Running JavaScript on the server. |  
 | **Firebase** | Backend services for authentication, hosting, and database management. |  
 | **MongoDB** | Storing and managing gas station data. |  
 | **Google Places API** | Fetching location-based gas station data. |  
 
-### 🛠 **Additional Tools**  
-| 🏆 Tool | 📝 Purpose |  
+###  **Additional Tools**  
+|  Tool |  Purpose |  
 |--------|---------|  
 | **Figma** | UI/UX design, wireframes, and mockups. |  
 | **Google Sheets** | For project management & organizing data. |  
@@ -54,7 +54,7 @@ GasHub is a web application that we are currently developing to help drivers **s
 
 ---
 
-## 📦 Installation (For Development)  
+##  Installation (For Development)  
 
 ```sh
 # Clone the repository
