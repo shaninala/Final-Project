@@ -1,3 +1,4 @@
+import { Button } from "../ui/Button";
 export default function Main() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center py-20 px-4 text-center bg-[#FAF3E0]">
@@ -10,6 +11,12 @@ export default function Main() {
         in your pocket and hit the road with confidence. Let us help you fuel
         your journey for less!
       </p>
+      <Button
+        href="/gas"
+        className="text-xl sm:text-3xl md:text-4xl px-20 py-5 rounded-3xl w-[300px] sm:w-[350px] md:w-[400px]"
+      >
+        Find Gas
+      </Button>
     </section>
   );
 }
