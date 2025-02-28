@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col jusity-center bg-[#CFE1B9] py-20 px-4"
+      className="min-h-screen flex flex-col justify-center bg-[#CFE1B9] py-20 px-4"
     >
       <div className="max-w-7xl mx-auto">
         <h1 className="max-w-7xl mx-auto text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center font-bold text-[#3D405B] mb-8">
