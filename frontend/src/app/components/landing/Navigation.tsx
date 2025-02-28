@@ -49,7 +49,7 @@ export default function Navigation() {
         <button
           ref={buttonRef}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="flex items-center space-x-2 bg-[#FAE5C3] text-[#333333] px-8 py-3 rounded-full border-4 border-[#A67C52] shadow-lg focus-outline-none focus:ring-0"
+          className="flex items-center space-x-2 bg-[#FAE5C3] text-[#333333] px-8 py-3 rounded-full border-4 border-[#A67C52] shadow-lg focus:outline-none focus:ring-0"
         >
           <Menu size={40} stroke="#A67C52" strokeWidth={2} />
           <CircleUserRound size={40} stroke="#A67C52" strokeWidth={2} />
