@@ -36,7 +36,7 @@ export default function Team() {
       id="team"
       className="min-h-screen flex flex-col justify-center py-20 px-4 bg-[#FAF3E0]"
     >
-      <span className="block text-4xl sm:text-6xl md:text-7xl lg:text:8xl font-bold text-[#3D405B] text-center mb-10">
+      <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#3D405B] text-center mb-10">
         Meet our Team
       </span>
       <span className="block text-center text-xl sm:text-xl md:text-2xl text-[#3D405B] mb-16 max-w-7xl mx-auto">
