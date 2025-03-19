@@ -61,13 +61,13 @@ export default function Navigation() {
             className="absolute right-0 mt-2 w-52 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52]"
           >
             <Link
-              href="/signup"
+              href="/sign-up"
               className="block px-8 py-4 text-lg hover:text-2xl hover:font-bold"
             >
               Sign up
             </Link>
             <Link
-              href="/login"
+              href="/sign-in"
               className="block px-8 py-4 text-lg hover:text-2xl hover:font-bold"
             >
               Login
