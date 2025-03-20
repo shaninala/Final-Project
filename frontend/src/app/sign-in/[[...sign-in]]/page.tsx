@@ -80,7 +80,7 @@ export default function SignInPage() {
                 <div className="flex justify-center mt-4">
                   <Clerk.Connection
                     name="google"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
+                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                   >
                     <Clerk.Icon className="w-5 h-5" />
                     <span className="text-[#4A4033] font-semibold">
@@ -93,7 +93,7 @@ export default function SignInPage() {
                 <div className="flex justify-center">
                   <Clerk.Connection
                     name="facebook"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
+                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                   >
                     <Clerk.Icon className="w-5 h-5" />
                     <span className="text-[#4A4033] font-semibold">
@@ -106,7 +106,7 @@ export default function SignInPage() {
                 <div className="flex justify-center">
                   <Clerk.Connection
                     name="apple"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
+                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                   >
                     <Clerk.Icon className="w-5 h-5" />
                     <span className="text-[#4A4033] font-semibold">
