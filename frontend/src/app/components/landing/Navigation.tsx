@@ -2,14 +2,18 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { Menu, CircleUserRound } from "lucide-react";
+import Logo from "./ui/Logo";
 
 const textStyle =
   "font-bold text-[#3D405B] hover:text-[#1a2a20] font-inter text-3xl hover:text-4xl hover:font-extrabold";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+  const mobileButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -21,17 +25,84 @@ export default function Navigation() {
       ) {
         setIsMenuOpen(false);
       }
+      if (
+        mobileButtonRef.current &&
+        !mobileButtonRef.current.contains(event.target as Node) &&
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
     };
+
     document.addEventListener("click", handleClickOutside);
+
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const menuItemStyle =
+    "block w-full px-8 py-4 text-lg hover:text-xl hover:font-bold transition-all duration-150 hover:bg-[#E5C9A0]";
+  const firstItemStyle = "rounded-t-lg";
+  const lastItemStyle = "rounded-b-lg";
+
   return (
     <nav className="fixed w-full flex items-center justify-between px-8 py-6 bg-[#51B97B] z-1000">
-      <div className=""></div>
-      <div className="flex items-center space-x-8">
+      <div className="flex items-center">
+        <div className="relative">
+          <button
+            ref={mobileButtonRef}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="mr-2 lg:hidden flex items-center space-x-2 bg-[#FAE5C3] text-[#333333] px-2 py-1 rounded-lg border-2 border-[#A67C52] shadow-lg focus:outline-none focus:ring-0"
+          >
+            <Menu size={40} stroke="#A67C52" strokeWidth={2} />
+          </button>
+
+          {isMobileMenuOpen && (
+            <div
+              ref={mobileMenuRef}
+              className="absolute left-0 mt-2 w-60 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52] lg:hidden z-50 overflow-hidden"
+              style={{ top: "100%" }}
+            >
+              <Link
+                href="/gas"
+                className={`${menuItemStyle} ${firstItemStyle}`}
+                onClick={closeMobileMenu}
+              >
+                Find Gas Station
+              </Link>
+              <Link
+                href="/#about"
+                className={menuItemStyle}
+                onClick={closeMobileMenu}
+              >
+                About
+              </Link>
+              <Link
+                href="/#team"
+                className={menuItemStyle}
+                onClick={closeMobileMenu}
+              >
+                Team
+              </Link>
+              <Link
+                href="/contact_us"
+                className={`${menuItemStyle} ${lastItemStyle}`}
+                onClick={closeMobileMenu}
+              >
+                Contact
+              </Link>
+            </div>
+          )}
+        </div>
+        <Logo link={"/"} />
+      </div>
+      <div className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
         <Link href="/gas" className={textStyle}>
           Find Gas Station
         </Link>
@@ -58,18 +129,15 @@ export default function Navigation() {
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute right-0 mt-2 w-52 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52]"
+            className="absolute right-0 mt-2 w-52 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52] overflow-hidden"
           >
             <Link
               href="/signup"
-              className="block px-8 py-4 text-lg hover:text-2xl hover:font-bold"
+              className={`${menuItemStyle} ${firstItemStyle}`}
             >
               Sign up
             </Link>
-            <Link
-              href="/login"
-              className="block px-8 py-4 text-lg hover:text-2xl hover:font-bold"
-            >
+            <Link href="/login" className={`${menuItemStyle} ${lastItemStyle}`}>
               Login
             </Link>
           </div>
