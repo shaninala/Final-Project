@@ -1,9 +1,14 @@
 "use client";
+import { useState } from "react";
+import Image from "next/image";
 import * as SignIn from "@clerk/elements/sign-in";
 import * as Clerk from "@clerk/elements/common";
 import Link from "next/link";
+import TogglePassword from "../../components/auth/TogglePassword";
 
 export default function SignInPage() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <section className="min-h-screen flex justify-center items-center bg-[#faf3e0] px-4 py-10">
       {/* Outer rectangle */}
@@ -28,15 +33,21 @@ export default function SignInPage() {
               </div>
 
               {/* Password Field */}
-              <div className="mb-6">
+              <div className="mb-6 relative">
                 <Clerk.Field name="password">
                   <Clerk.Label className="text-[#3D405B] block text-lg font-extrabold mb-2">
                     Password:
                   </Clerk.Label>
-                  <Clerk.Input
-                    type="password"
-                    className="w-[600px] h-[40px] p-2 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
-                  />
+                  <div className="relative w-[600px]">
+                    <Clerk.Input
+                      type={showPassword ? "text" : "password"}
+                      className="w-[600px] h-[40px] p-2 pr-12 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
+                    />
+                    <TogglePassword
+                      showPassword={showPassword}
+                      setShowPassword={setShowPassword}
+                    />
+                  </div>
                   <Clerk.FieldError className="text-red-500 text-sm" />
                 </Clerk.Field>
               </div>
