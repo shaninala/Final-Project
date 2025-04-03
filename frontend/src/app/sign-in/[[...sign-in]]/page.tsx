@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import * as SignIn from "@clerk/elements/sign-in";
 import * as Clerk from "@clerk/elements/common";
 import Link from "next/link";
@@ -62,7 +61,7 @@ export default function SignInPage() {
                 </SignIn.Action>
               </div>
 
-              {/* Forgot Password */}
+              {/* Forgot Pagisword */}
               <div className="flex justify-center mb-6">
                 <SignIn.Action
                   navigate="forgot-password"
