@@ -1,26 +1,38 @@
+import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navigation from "./components/landing/Navigation";
 import "./globals.css";
+import Navigation from "./components/landing/Navigation";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GasHub",
-  description: "Discovered affordable gas prices near you with GasHub.",
+  title: "GasHub - Find the Best Gas Prices",
+  description:
+    "Discover affordable gas prices near you with GasHub. Save money on every fill-up!",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>
-        <Navigation />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <Navigation />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

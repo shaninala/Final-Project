@@ -3,9 +3,15 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { Menu, CircleUserRound } from "lucide-react";
 import Logo from "./ui/Logo";
+import { useAuth, SignOutButton, useUser } from "@clerk/nextjs";
 
 const textStyle =
   "font-bold text-[#3D405B] hover:text-[#1a2a20] font-inter text-3xl hover:text-4xl hover:font-extrabold";
+
+const capitalizeFirstLetter = (string: string | null | undefined): string => {
+  if (!string) return "User";
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +20,11 @@ export default function Navigation() {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
   const mobileButtonRef = useRef<HTMLButtonElement | null>(null);
+  const { isSignedIn } = useAuth();
+  const { user } = useUser();
+  const displayName = capitalizeFirstLetter(
+    user?.username || user?.firstName || "user"
+  );
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -44,6 +55,10 @@ export default function Navigation() {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+  };
+      
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   const menuItemStyle =
@@ -131,15 +146,38 @@ export default function Navigation() {
             ref={menuRef}
             className="absolute right-0 mt-2 w-52 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52] overflow-hidden"
           >
-            <Link
-              href="/signup"
-              className={`${menuItemStyle} ${firstItemStyle}`}
-            >
-              Sign up
-            </Link>
-            <Link href="/login" className={`${menuItemStyle} ${lastItemStyle}`}>
-              Login
-            </Link>
+            {isSignedIn ? (
+              <>
+                <div className="block w-full text-left px-8 pt-4 text-xl font-bold">
+                  Welcome {displayName}
+                </div>
+                <SignOutButton>
+                  <button
+                    className="block w-full text-left px-8 py-4 text-lg hover:text-2xl hover:font-bold"
+                    onClick={closeMenu}
+                  >
+                    Sign out
+                  </button>
+                </SignOutButton>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/sign-up/"
+                  className="block px-8 py-4 text-lg hover:text-2xl hover:font-bold"
+                  onClick={closeMenu}
+                >
+                  Sign up
+                </Link>
+                <Link
+                  href="/sign-in/"
+                  className="block px-8 py-4 text-lg hover:text-2xl hover:font-bold"
+                  onClick={closeMenu}
+                >
+                  Login
+                </Link>
+              </>
+            )}
           </div>
         )}
       </div>
