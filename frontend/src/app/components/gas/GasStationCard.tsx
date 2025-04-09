@@ -24,26 +24,34 @@ export default function GasStationCard({
   price,
 }: GasStationProps) {
   return (
-    <div className="bg-[#E8D9B5] rounded-lg p-6 mb-4 shadow-md">
+    <div className="bg-[#E8D9B5] rounded-lg p-4 sm:p-6 mb-4 shadow-md">
       <div className="flex justify-between items-start">
         <div>
-          <span className="text-xl font-semibold text-[#3D405B]">{name}</span>
-          <p>{address}</p>
-          <p>{`${city}, ${zipCode}`}</p>
+          <span className="text-lg sm:text-xl font-semibold text-[#3D405B]">
+            {name}
+          </span>
+          <p className="text-sm sm:text-base">{address}</p>
+          <p className="text-sm sm:text-base">{`${city}, ${zipCode}`}</p>
         </div>
       </div>
-      <div>
+      <div className="mt-3">
         <div>
-          <ul>
-            {fuelTypes.map((fuelType, index) => {
-              const priceKey = fuelType.toLowerCase() as keyof typeof price;
-              return (
-                <li key={index} className="text-[#3D405B]">
-                  {fuelType}: ${price[priceKey]?.toFixed(2) || "N/A"}
-                </li>
-              );
-            })}
-          </ul>
+          <div>
+            <span></span>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {fuelTypes.map((fuelType, index) => {
+                const priceKey = fuelType.toLowerCase() as keyof typeof price;
+                return (
+                  <li
+                    key={index}
+                    className="text-sm sm:text-base text-[#3D405B]"
+                  >
+                    {fuelType}: ${price[priceKey]?.toFixed(2) || "N/A"}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
