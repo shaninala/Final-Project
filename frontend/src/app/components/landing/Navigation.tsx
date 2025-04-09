@@ -2,9 +2,8 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { Menu, CircleUserRound } from "lucide-react";
-import logo from "./icons/logo";
+import Logo from "./ui/Logo";
 import { useAuth, SignOutButton, useUser } from "@clerk/nextjs";
-import Logo from "./icons/logo";
 
 const textStyle =
   "font-bold text-[#3D405B] hover:text-[#1a2a20] font-inter text-3xl hover:text-4xl hover:font-extrabold";
@@ -48,7 +47,7 @@ export default function Navigation() {
   return (
     <nav className="fixed w-full flex items-center px-8 py-6 bg-[#51B97B] z-1000">
       <div>
-        <logo link={"/"} />
+        <Logo link={"/"} />
       </div>
 
       <div className="flex-1 flex justify-center items-center space-x-8">
