@@ -56,7 +56,7 @@ export default function Navigation() {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
-
+      
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -144,7 +144,7 @@ export default function Navigation() {
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute right-0 mt-2 w-52 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52]"
+            className="absolute right-0 mt-2 w-52 bg-[#FAE5C3] rounded-lg shadow-lg border border-[#A67C52] overflow-hidden"
           >
             {isSignedIn ? (
               <>
