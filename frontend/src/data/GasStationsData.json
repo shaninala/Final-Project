@@ -6,6 +6,17 @@
       "address": "1105 60TH ST",
       "city": "Brooklyn, NY",
       "zipCode": "11219",
+      "fullAddress": "1105 60TH ST, Brooklyn, NY 11219",
+      "phone": "(718)-653-0248",
+      "rating": 4.2,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Great service and clean facilities."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -20,6 +31,17 @@
       "address": "4302 Fort Hamilton Pkwy",
       "city": "Brooklyn, NY",
       "zipCode": "11219",
+      "fullAddress": "4302 Fort Hamilton Pkwy, Brooklyn, NY 11219",
+      "phone": "(718)-123-4567",
+      "rating": 4.0,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Good prices and friendly staff."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
@@ -32,6 +54,17 @@
       "address": "7023 Bay Pkwy",
       "city": "Brooklyn, NY",
       "zipCode": "11204",
+      "fullAddress": "7023 Bay Pkwy, Brooklyn, NY 11204",
+      "phone": "(718)-987-6543",
+      "rating": 4.1,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Decent fuel prices and service."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -46,6 +79,17 @@
       "address": "1781 Bay Ridge Pkwy",
       "city": "Brooklyn, NY",
       "zipCode": "11204",
+      "fullAddress": "1781 Bay Ridge Pkwy, Brooklyn, NY 11204",
+      "phone": "(718)-111-2223",
+      "rating": 4.3,
+      "lastUpdated": "3 days ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-08",
+          "content": "Convenient location with good amenities."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -60,6 +104,17 @@
       "address": "6002 18th Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11204",
+      "fullAddress": "6002 18th Ave, Brooklyn, NY 11204",
+      "phone": "(718)-222-3334",
+      "rating": 4.0,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Quick stop with decent fuel."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -74,6 +129,17 @@
       "address": "2516 65TH ST",
       "city": "Brooklyn, NY",
       "zipCode": "11204",
+      "fullAddress": "2516 65TH ST, Brooklyn, NY 11204",
+      "phone": "(718)-333-4445",
+      "rating": 4.1,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Affordable prices and convenient self-service."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
@@ -83,9 +149,20 @@
     {
       "id": 7,
       "name": "Shell & Atlantis Fresh Market",
-      "address": "1149 UTICA AVE",
+      "address": "1149 Utice Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11203",
+      "fullAddress": "1149 Utice Ave, Brooklyn, NY 11203",
+      "phone": "(718)-444-5556",
+      "rating": 4.4,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Unique combination of market and fuel station."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Diesel"],
       "isSelfService": true,
       "price": {
@@ -100,6 +177,17 @@
       "address": "1140 Utica Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11203",
+      "fullAddress": "1140 Utica Ave, Brooklyn, NY 11203",
+      "phone": "(718)-555-6667",
+      "rating": 4.2,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Reliable service and fair pricing."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Diesel"],
       "isSelfService": true,
       "price": {
@@ -114,6 +202,17 @@
       "address": "530 Utica Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11203",
+      "fullAddress": "530 Utica Ave, Brooklyn, NY 11203",
+      "phone": "(718)-666-7778",
+      "rating": 4.0,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Clean station with competitive fuel rates."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -128,6 +227,17 @@
       "address": "865 Rogers Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11202",
+      "fullAddress": "865 Rogers Ave, Brooklyn, NY 11202",
+      "phone": "(718)-777-8889",
+      "rating": 4.3,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Efficient and well-maintained station."
+        }
+      ],
       "fuelTypes": ["Regular", "Premium"],
       "isSelfService": true,
       "price": {
@@ -138,9 +248,20 @@
     {
       "id": 11,
       "name": "BP",
-      "address": "3602 SNYDER AVE",
+      "address": "3602 Snyder Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11202",
+      "fullAddress": "3602 Snyder Ave, Brooklyn, NY 11202",
+      "phone": "(718)-888-9990",
+      "rating": 4.0,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Good value for the price."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -155,6 +276,17 @@
       "address": "895 Bedford Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11205",
+      "fullAddress": "895 Bedford Ave, Brooklyn, NY 11205",
+      "phone": "(718)-999-0001",
+      "rating": 4.5,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Excellent service and great fuel deals."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium", "Diesel"],
       "isSelfService": true,
       "price": {
@@ -170,6 +302,17 @@
       "address": "75 Classon Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11205",
+      "fullAddress": "75 Classon Ave, Brooklyn, NY 11205",
+      "phone": "(718)-012-3456",
+      "rating": 4.1,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Consistent fuel quality and service."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -181,9 +324,20 @@
     {
       "id": 14,
       "name": "BP",
-      "address": "152 UNION AVE",
+      "address": "152 Union Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11206",
+      "fullAddress": "152 Union Ave, Brooklyn, NY 11206",
+      "phone": "(718)-234-5678",
+      "rating": 4.2,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Modern facilities with quick service."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade", "Premium"],
       "isSelfService": true,
       "price": {
@@ -198,6 +352,17 @@
       "address": "2816 Atlantic Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11207",
+      "fullAddress": "2816 Atlantic Ave, Brooklyn, NY 11207",
+      "phone": "(718)-345-6789",
+      "rating": 4.0,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Budget-friendly with decent service."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
@@ -210,6 +375,17 @@
       "address": "765 Pennsylvania Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11207",
+      "fullAddress": "765 Pennsylvania Ave, Brooklyn, NY 11207",
+      "phone": "(718)-456-7890",
+      "rating": 4.1,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Quick stop and friendly service."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
@@ -219,9 +395,20 @@
     {
       "id": 17,
       "name": "BP",
-      "address": "1130 PENNSYLVANIA AVE",
+      "address": "1130 Pennsylvania Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11207",
+      "fullAddress": "1130 Pennsylvania Ave, Brooklyn, NY 11207",
+      "phone": "(718)-567-8901",
+      "rating": 4.0,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Reliable station with competitive prices."
+        }
+      ],
       "fuelTypes": ["Regular", "Midgrade"],
       "isSelfService": true,
       "price": {
@@ -235,6 +422,17 @@
       "address": "1121 Pennsylvania Ave",
       "city": "Brooklyn, NY",
       "zipCode": "11207",
+      "fullAddress": "1121 Pennsylvania Ave, Brooklyn, NY 11207",
+      "phone": "(718)-678-9012",
+      "rating": 4.1,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Decent location with acceptable prices."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
@@ -247,6 +445,17 @@
       "address": "32 Highland Blvd",
       "city": "Brooklyn, NY",
       "zipCode": "11207",
+      "fullAddress": "32 Highland Blvd, Brooklyn, NY 11207",
+      "phone": "(718)-789-0123",
+      "rating": 4.0,
+      "lastUpdated": "2 days ago",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "2023-03-10",
+          "content": "Great spot with competitive pricing."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
@@ -259,6 +468,17 @@
       "address": "1935 Linden Blvd",
       "city": "Brooklyn, NY",
       "zipCode": "11207",
+      "fullAddress": "1935 Linden Blvd, Brooklyn, NY 11207",
+      "phone": "(718)-890-1234",
+      "rating": 4.2,
+      "lastUpdated": "1 day ago",
+      "reviews": [
+        {
+          "user": "Jane Smith",
+          "date": "2023-03-09",
+          "content": "Consistent fuel quality and great customer service."
+        }
+      ],
       "fuelTypes": ["Regular"],
       "isSelfService": true,
       "price": {
