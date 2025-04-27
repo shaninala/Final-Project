@@ -34,15 +34,15 @@ export default function SignUpPage() {
               </div>
 
               {/* Username Field */}
-              <div className="mb-4">
-                <Clerk.Field name="username" className="space-y-2">
-                  <Clerk.Label className="text-[#3D405B] block text-lg font-extrabold mb-2">
+              <div className="mb-4 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
+                <Clerk.Field name="username" className="space-y-2 w-full">
+                  <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
                     Username:
                   </Clerk.Label>
                   <Clerk.Input
                     type="text"
                     required
-                    className="w-[600px] h-[40px] p-2 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
+                    className="w-full h-[50px] md:h-[60px] p-2 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
                     aria-label="Username"
                   />
                   <Clerk.FieldError className="block text-sm text-red-400" />
