@@ -12,21 +12,21 @@ export default function SignInPage() {
     <section className="min-h-screen flex flex-col justify-start items-center py-8 sm:py-12 md:py-16 px-4 pt-12 sm:pt-20 md:pt-16 pb-20 text-center bg-[#FAF3E0]">
       {/* Outer rectangle */}
       <div className="w-full max-w-[800px] bg-[#E8D9B5] border-4 border-[#A67C52] flex flex-col items-center p-4 sm:p-6 md:p-8 lg:p-12 shadow-lg rounded-lg mt-24 sm:mt-24 md:mt-28">
-        <h1 className="text-[#3D405B] text-6xl font-bold text-center mb-6">
+        <h1 className="text-[#3D405B] text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-4 md:mb-6">
           Log in to GasHub
         </h1>
 
         {/* Form container */}
-        <div className="w-full p-6">
+        <div className="w-full p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col items-center">
           <SignIn.Root>
             <SignIn.Step name="start">
               {/* Email Field */}
-              <div className="mb-4">
+              <div className="mb-4 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
                 <Clerk.Field name="identifier">
-                  <Clerk.Label className="text-[#3D405B] block text-lg font-extrabold mb-2">
-                    Email:
+                  <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
+                    Email or Username:
                   </Clerk.Label>
-                  <Clerk.Input className="w-[600px] h-[40px] p-2 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]" />
+                  <Clerk.Input className="w-full h-[50px] md:h-[60px] p-2 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]" />
                   <Clerk.FieldError className="text-red-500 text-sm" />
                 </Clerk.Field>
               </div>
