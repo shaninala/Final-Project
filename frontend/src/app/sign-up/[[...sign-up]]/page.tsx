@@ -8,8 +8,8 @@ export default function SignUpPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <section className="min-h-screen flex justify-center items-center bg-[#faf3e0] px-4 py-10">
-      <div className="w-[800px] bg-[#E8D9B5] border-4 border-[#A67C52] flex flex-col items-center p-12 shadow-lg rounded-lg mt-32">
+    <section className="min-h-screen flex flex-col justify-start items-center py-8 sm:py-12 md:py-16 px-4 pt-12 sm:pt-20 md:pt-16 pb-20 text-center bg-[#FAF3E0]">
+      <div className="w-full max-w-[800px] bg-[#E8D9B5] border-4 border-[#A67C52] flex flex-col items-center p-6 md:p-8 lg:p-12 shadow-lg rounded-lg mt-28 md:mt-28">
         <h1 className="text-[#3D405B] text-6xl font-bold text-center mb-6">
           Sign Up to GasHub
         </h1>
