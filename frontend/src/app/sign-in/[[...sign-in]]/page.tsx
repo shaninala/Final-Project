@@ -32,15 +32,15 @@ export default function SignInPage() {
               </div>
 
               {/* Password Field */}
-              <div className="mb-6 relative">
+              <div className="mb-6 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
                 <Clerk.Field name="password">
-                  <Clerk.Label className="text-[#3D405B] block text-lg font-extrabold mb-2">
+                  <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
                     Password:
                   </Clerk.Label>
-                  <div className="relative w-[600px]">
+                  <div className="relative w-full">
                     <Clerk.Input
                       type={showPassword ? "text" : "password"}
-                      className="w-[600px] h-[40px] p-2 pr-12 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
+                      className="w-full h-[50px] md:h-[60px] p-2 pr-12 bg-[#E8D9B5] border border-[#A67C52] focus:outline-none focus:ring-2 focus:ring-[#A67C52]"
                     />
                     <TogglePassword
                       showPassword={showPassword}
@@ -52,10 +52,10 @@ export default function SignInPage() {
               </div>
 
               {/* Sign-in button */}
-              <div className="mb-4 flex justify-center">
+              <div className="mb-4 flex justify-center w-full">
                 <SignIn.Action
                   submit
-                  className="w-[300px] h-[60px] bg-[#008737] text-[#FAF3E0] text-xl rounded-[100px] mx-auto hover:bg-[#00A04A]"
+                  className="w-full max-w-[250px] sm:max-w-[280px] md:max-w-[300px] h-[45px] sm:h-[50px] md:h-[60px] bg-[#008737] text-[#FAF3E0] text-base sm:text-lg md:text-xl rounded-[100px] mx-auto hover:bg-[#00A04A]"
                 >
                   Log In
                 </SignIn.Action>
