@@ -71,12 +71,12 @@ export default function SignInPage() {
               </div>
 
               {/* Sign-up Section */}
-              <div className="flex justify-center mt-4">
-                <p className="text-[#3D405B] text-lg">
-                  Don’t have an account?{" "}
+              <div className="flex justify-center mt-4 text-center w-full">
+                <p className="text-[#3D405B] text-sm sm:text-base md:text-lg">
+                  Don't have an account?{" "}
                   <Link
                     href="/sign-up"
-                    className="text-[#3D405B] font-extrabold  underline"
+                    className="text-[#3D405B] font-extrabold underline"
                   >
                     Sign up for GasHub
                   </Link>
