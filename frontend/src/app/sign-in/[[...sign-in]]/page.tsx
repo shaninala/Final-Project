@@ -61,10 +61,10 @@ export default function SignInPage() {
               </div>
 
               {/* Forgot Pagisword */}
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-6 w-full">
                 <SignIn.Action
                   navigate="forgot-password"
-                  className="text-[#3D405B] block text-lg font-extrabold mb-2 underline"
+                  className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 underline"
                 >
                   Forgot your password?
                 </SignIn.Action>
