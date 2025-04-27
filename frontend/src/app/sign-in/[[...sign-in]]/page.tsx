@@ -20,7 +20,6 @@ export default function SignInPage() {
         <div className="w-full p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col items-center">
           <SignIn.Root>
             <SignIn.Step name="start">
-              {/* Email Field */}
               <div className="mb-4 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
                 <Clerk.Field name="identifier">
                   <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
