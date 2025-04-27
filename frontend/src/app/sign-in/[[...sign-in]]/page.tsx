@@ -84,28 +84,28 @@ export default function SignInPage() {
               </div>
 
               {/* Social Sign-in Options */}
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 mt-6 w-full items-center">
                 {/* Google Sign-in */}
-                <div className="flex justify-center mt-4">
+                <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="google"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
+                    className="w-[320px] md:w-[600px] h-[50px] md:h-[60px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                   >
                     <Clerk.Icon className="w-5 h-5" />
-                    <span className="text-[#4A4033] font-semibold">
+                    <span className="text-[#4A4033] text-sm sm:text-base font-semibold">
                       Continue with Google
                     </span>
                   </Clerk.Connection>
                 </div>
 
                 {/* Facebook Sign-in */}
-                <div className="flex justify-center">
+                <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="facebook"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
+                    className="w-[320px] md:w-[600px] h-[50px] md:h-[60px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                   >
                     <Clerk.Icon className="w-5 h-5" />
-                    <span className="text-[#4A4033] font-semibold">
+                    <span className="text-[#4A4033] text-sm sm:text-base font-semibold">
                       Continue with Facebook
                     </span>
                   </Clerk.Connection>
