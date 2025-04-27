@@ -108,28 +108,28 @@ export default function SignUpPage() {
                 </div>
 
                 {/* Facebook Sign-in */}
-                <div className="flex justify-center">
+                <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="facebook"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
+                    className="w-[320px] md:w-[600px] h-[50px] md:h-[60px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                     aria-label="Sign up with Facebook"
                   >
                     <Clerk.Icon className="w-5 h-5" />
-                    <span className="text-[#4A4033] font-semibold">
+                    <span className="text-[#4A4033] text-sm sm:text-base font-semibold">
                       Sign up with Facebook
                     </span>
                   </Clerk.Connection>
                 </div>
 
                 {/* Apple Sign-in */}
-                <div className="flex justify-center">
+                <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="apple"
-                    className="w-[350px] h-[40px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
+                    className="w-[320px] md:w-[600px] h-[50px] md:h-[60px] bg-[#E8D9B5] border border-[#A67C52] rounded-lg flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#A67C52] hover:bg-[#D1B78C]"
                     aria-label="Sign up with Apple"
                   >
                     <Clerk.Icon className="w-5 h-5" />
-                    <span className="text-[#4A4033] font-semibold">
+                    <span className="text-[#4A4033] text-sm sm:text-base font-semibold">
                       Sign up with Apple
                     </span>
                   </Clerk.Connection>
