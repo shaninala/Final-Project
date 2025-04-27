@@ -71,10 +71,10 @@ export default function SignUpPage() {
 
               <SignUp.Captcha className="empty:hidden" />
 
-              <div className="mb-4 flex justify-center">
+              <div className="mb-4 flex justify-center w-full">
                 <SignUp.Action
                   submit
-                  className="w-[300px] h-[60px] bg-[#008737] text-[#FAF3E0] text-xl rounded-[100px] mx-auto hover:bg-[#00A04A]"
+                  className="w-full max-w-[250px] sm:max-w-[280px] md:max-w-[300px] h-[45px] sm:h-[50px] md:h-[60px] bg-[#008737] text-[#FAF3E0] text-base sm:text-lg md:text-xl rounded-[100px] mx-auto hover:bg-[#00A04A]"
                 >
                   Sign Up
                 </SignUp.Action>
