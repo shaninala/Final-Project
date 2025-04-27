@@ -80,8 +80,8 @@ export default function SignUpPage() {
                 </SignUp.Action>
               </div>
 
-              <div className="flex justify-center mt-4">
-                <p className="text-[#3D405B] text-lg">
+              <div className="flex justify-center mt-4 text-center w-full">
+                <p className="text-[#3D405B] text-sm sm:text-base md:text-lg">
                   Already Have an account?{" "}
                   <Clerk.Link
                     navigate="sign-in"
