@@ -1,7 +1,10 @@
 import { Button } from "../ui/Button";
+import Image from "next/image";
+import mainPic from "./images/main_pic.svg";
+
 export default function Main() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center py-20 px-4 text-center bg-[#FAF3E0]">
+    <section className="min-h-screen flex flex-col justify-center items-center py-40 px-4 text-center bg-[#FAF3E0]">
       <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-[#3D405B] mb-8">
         Welcome to GasHub
       </h1>
@@ -17,6 +20,10 @@ export default function Main() {
       >
         Find Gas
       </Button>
+
+      <div className="absolute bottom-4 right-10 w-[400px] h-[400px]">
+        <Image src={mainPic} alt="Gas icon" fill className="object-contain" />
+      </div>
     </section>
   );
 }
