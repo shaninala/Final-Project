@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import ShowPassIcon from "./show_pass.svg";
-import HidePassIcon from "./hide_pass.svg";
+import ShowPassIcon from "@/../public/auth/show_pass.svg";
+import HidePassIcon from "@/../public/auth/hide_pass.svg";
 
 interface TogglePasswordProps {
   showPassword: boolean;

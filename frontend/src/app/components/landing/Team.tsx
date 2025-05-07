@@ -26,7 +26,7 @@ const teamMembers: Member[] = [
     role: "Frontend Developer",
     image: shani_photo,
     githubUrl: "https://github.com/shaninala",
-    linkedinUrl: "https://linkedin.com",
+    linkedinUrl: "https://www.linkedin.com/in/shani-tuachi/",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="min-h-screen flex flex-col justify-center py-20 px-4 bg-[#FAF3E0]"
+      className="min-h-screen flex flex-col justify-center py-40 px-4 bg-[#FAF3E0]"
     >
       <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#3D405B] text-center mb-10">
         Meet our Team

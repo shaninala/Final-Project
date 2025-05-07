@@ -13,7 +13,6 @@ export default function SignUpPage() {
         <h1 className="text-[#3D405B] text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-4 md:mb-6">
           Sign Up to GasHub
         </h1>
-
         <div className="w-full p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col items-center">
           <SignUp.Root>
             <SignUp.Step name="start">
@@ -48,7 +47,6 @@ export default function SignUpPage() {
                   <Clerk.FieldError className="block text-sm text-red-400" />
                 </Clerk.Field>
               </div>
-
               <div className="mb-6 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
                 <Clerk.Field name="password">
                   <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
@@ -68,9 +66,7 @@ export default function SignUpPage() {
                   <Clerk.FieldError className="text-red-500 text-sm" />
                 </Clerk.Field>
               </div>
-
               <SignUp.Captcha className="empty:hidden" />
-
               <div className="mb-4 flex justify-center w-full">
                 <SignUp.Action
                   submit
@@ -79,7 +75,6 @@ export default function SignUpPage() {
                   Sign Up
                 </SignUp.Action>
               </div>
-
               <div className="flex justify-center mt-4 text-center w-full">
                 <p className="text-[#3D405B] text-sm sm:text-base md:text-lg">
                   Already Have an account?{" "}
