@@ -31,6 +31,8 @@ export default function SignUpPage() {
                   <Clerk.FieldError className="block text-sm text-red-400" />
                 </Clerk.Field>
               </div>
+
+              {/* Username Field */}
               <div className="mb-4 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
                 <Clerk.Field name="username" className="space-y-2 w-full">
                   <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
@@ -84,7 +86,9 @@ export default function SignUpPage() {
                   </Clerk.Link>
                 </p>
               </div>
+
               <div className="flex flex-col gap-2 mt-6 w-full items-center">
+                {/* Google Sign-in */}
                 <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="google"
@@ -97,6 +101,8 @@ export default function SignUpPage() {
                     </span>
                   </Clerk.Connection>
                 </div>
+
+                {/* Facebook Sign-in */}
                 <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="facebook"
@@ -109,6 +115,8 @@ export default function SignUpPage() {
                     </span>
                   </Clerk.Connection>
                 </div>
+
+                {/* Apple Sign-in */}
                 <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="apple"

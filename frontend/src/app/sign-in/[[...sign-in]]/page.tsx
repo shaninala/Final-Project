@@ -10,10 +10,13 @@ export default function SignInPage() {
 
   return (
     <section className="min-h-screen flex flex-col justify-start items-center py-8 sm:py-12 md:py-16 px-4 pt-12 sm:pt-20 md:pt-16 pb-20 text-center bg-[#FAF3E0]">
+      {/* Outer rectangle */}
       <div className="w-full max-w-[800px] bg-[#E8D9B5] border-4 border-[#A67C52] flex flex-col items-center p-4 sm:p-6 md:p-8 lg:p-12 shadow-lg rounded-lg mt-24 sm:mt-24 md:mt-28">
         <h1 className="text-[#3D405B] text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-4 md:mb-6">
           Log in to GasHub
         </h1>
+
+        {/* Form container */}
         <div className="w-full p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col items-center">
           <SignIn.Root>
             <SignIn.Step name="start">
@@ -26,6 +29,8 @@ export default function SignInPage() {
                   <Clerk.FieldError className="text-red-500 text-sm" />
                 </Clerk.Field>
               </div>
+
+              {/* Password Field */}
               <div className="mb-6 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[600px]">
                 <Clerk.Field name="password">
                   <Clerk.Label className="text-[#3D405B] block text-sm sm:text-base md:text-lg font-extrabold mb-2 text-left">
@@ -44,6 +49,8 @@ export default function SignInPage() {
                   <Clerk.FieldError className="text-red-500 text-sm" />
                 </Clerk.Field>
               </div>
+
+              {/* Sign-in button */}
               <div className="mb-4 flex justify-center w-full">
                 <SignIn.Action
                   submit
@@ -52,6 +59,8 @@ export default function SignInPage() {
                   Log In
                 </SignIn.Action>
               </div>
+
+              {/* Forgot Pagisword */}
               <div className="flex justify-center mb-6 w-full">
                 <SignIn.Action
                   navigate="forgot-password"
@@ -60,6 +69,8 @@ export default function SignInPage() {
                   Forgot your password?
                 </SignIn.Action>
               </div>
+
+              {/* Sign-up Section */}
               <div className="flex justify-center mt-4 text-center w-full">
                 <p className="text-[#3D405B] text-sm sm:text-base md:text-lg">
                   Don't have an account?{" "}
@@ -71,7 +82,10 @@ export default function SignInPage() {
                   </Link>
                 </p>
               </div>
+
+              {/* Social Sign-in Options */}
               <div className="flex flex-col gap-2 mt-6 w-full items-center">
+                {/* Google Sign-in */}
                 <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="google"
@@ -83,6 +97,8 @@ export default function SignInPage() {
                     </span>
                   </Clerk.Connection>
                 </div>
+
+                {/* Facebook Sign-in */}
                 <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="facebook"
@@ -94,6 +110,8 @@ export default function SignInPage() {
                     </span>
                   </Clerk.Connection>
                 </div>
+
+                {/* Apple Sign-in */}
                 <div className="flex justify-center w-full">
                   <Clerk.Connection
                     name="apple"
