@@ -6,6 +6,7 @@ const isPublicRoute = createRouteMatcher([
   "/sign-up",
   "/",
   "/contact_us",
+  "/contact_us/confirmation", 
   "/gas",
   /^\/gas\/[^\/]+$/,
 ]);
